@@ -59,6 +59,12 @@ h2 {
     font-size: 1.6em;
     font-weight: 400;
     margin: 10px 0;
+    background: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: #ffffff; /* Garante que o texto fique branco */
+    text-align: center;
+
 }
 
 main {
