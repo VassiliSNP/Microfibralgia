@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Cabin', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Fundo verde-azulado suave, associado a saúde */
+    color: #333333; /* Texto escuro */
+    line-height: 1.8;
+    font-size: 1.1rem;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 300px; /* Aumentei a altura para melhorar o layout */
+    background: url('https://cdn.prod.website-files.com/647e410aa35e6ce70fed96cd/647e410aa35e6ce70feda2f7_fibromialgia.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Sobreposição mais clara */
+    z-index: 0;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #ffffff; /* Texto branco para destaque no cabeçalho */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: rgba(255, 255, 255, 0.7); /* Fundo branco semi-transparente */
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 1.6em;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    display: grid;
+    gap: 1.5rem;
+}
+
+h3 {
+    font-size: 1.4em;
+    color: #ff8c42; /* Laranja para destaques */
+    margin-top: 1.5rem;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 1rem;
+    color: #4a4a4a; /* Texto cinza médio */
+}
+
+strong {
+    color: #ff8c42; /* Laranja para destaques */
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    background: #28a745; /* Verde para o botão */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background: #218838; /* Verde mais escuro no hover */
+    transform: scale(1.05);
+}
+
+footer {
+    padding: 15px;
+    background: #ffffff; /* Fundo branco */
+    color: #888888; /* Texto cinza */
+    text-align: center;
+    font-size: 0.9em;
+    border-top: 1px solid #e0e0e0; /* Borda superior sutil */
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+
+    header {
+        height: 250px; /* Reduzindo a altura em dispositivos móveis */
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
